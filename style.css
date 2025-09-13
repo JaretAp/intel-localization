@@ -201,7 +201,7 @@ header div p {
   line-height: 1.3;
   letter-spacing: 1.1px;
   text-align: center;
-  text-shadow: black 1.5px -.75px .6px;
+  text-shadow: black 0px 0px 50px 20px;
 }
 
 #p-1971 {
@@ -446,6 +446,7 @@ section {
   animation: spinAndFlip 1s forwards;
 }
 
+
 .card-front,
 .card-back {
   position: absolute;
@@ -515,7 +516,7 @@ section {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 30%;
+  height: 20%;
   background:
     linear-gradient(to right,
       rgba(0, 199, 253, 0.0) 0%,
@@ -529,6 +530,14 @@ section {
   z-index: 1;
   pointer-events: none;
   border: none;
+}
+
+.card .card-inner .card-back .top-back-info {
+  width: 100%;
+  height: 80%;
+  z-index: 3;
+  border-bottom: 12px solid black;
+  background-color: rgb(8, 8, 8) !important;
 }
 
 /* Setup of the shadow text to use a gradient to illuminate the scroll-text instructions */
@@ -663,6 +672,8 @@ section {
     line-height: 1.3;
     letter-spacing: 1.1px;
     text-align: center;
+    width: 100%;
+    height: 100%;
   }
 
   #p-1971 {
