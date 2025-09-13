@@ -1,5 +1,20 @@
 /* Add your CSS here */
 
+/* ***********************   Prevention of CSS randomness   *********************** */
+
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+*, body, html {
+  box-sizing: border-box;
+  margin: 0 0;
+  padding: 0 0;
+}
+
 
 /*  ******************         Notes to use for projects        *************************  */
 
@@ -140,18 +155,30 @@ header div p {
   font-optical-sizing: auto;
   font-weight: 500;
   font-size: 1.15rem;
-    color: rgb(240, 240, 240);
+  letter-spacing: 1.1px;
+  color: rgb(240, 240, 240);
 }
 
-section .card-scroll .card .card-inner .card-back p {
-  padding: 1rem 1rem;
+.top-info h2,
+.top-info h3 {
   font-family: "Grenze", serif;
   font-weight: 600;
   font-style: normal;
-  text-align: center;
-  font-size: 1.25rem;
   line-height: 1.2;
-  text-shadow: rgb(5, 5, 5) 1.5px -1.5px;
+  letter-spacing: 1.2px;
+}
+
+.top-info h2 {
+  text-shadow: black 2px -.5px .5px;
+  font-size: 3rem;
+  color: #00C7FDFF;
+}
+
+.top-info h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.35rem;
+  text-shadow:rgba(97, 210, 241, .0) 2.5px -.5px .5px;
+  color: rgb(0, 0, 0);
 }
 
 #p-1968 {
@@ -202,31 +229,13 @@ section .card-scroll .card .card-inner .card-back p {
   margin-top: .25rem;
 }
 
-.card-scroll .card .card-inner .card-front h2 {
-  text-shadow: black 2px -.5px .5px;
-  margin-top: .6rem;
-  padding-left: .5rem;
-  font-size: 1.7rem;
-  letter-spacing: 1.1px;
-}
-
-.card-scroll .card .card-inner .card-front h3 {
-  font-family: "Noto Serif", serif;
-  
-  padding-left: .5rem;
-  margin-top: .5rem;
-  font-size: 1.30rem;
-  margin-bottom: -.5rem;
-  letter-spacing: 1.2px;
-  text-shadow:rgb(97, 210, 241) 2.5px -.5px .5px;
-}
 
 .instructions .stack .scroll-text,
 .instructions .stack-3 .scroll-text {
   font-family: "Grenze", serif;
   font-weight: 500;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 1.35px;
 }
 
@@ -240,33 +249,23 @@ section .card-scroll .card .card-inner .card-back p {
 }
 
 
-/* ***********************   Prevention of CSS randomness   *********************** */
 
-
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0 0;
-  padding: 0 0;
-}
-
-*, body, html {
-  box-sizing: border-box;
-  margin: 0 0;
-  padding: 0 0;
-}
 
 
 /* ***********************  Sizing Elements  **************************** */
 
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: rgba(15, 15, 15, 1);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  padding-top: .5rem;
+  padding: .75rem 0 2rem 0;
   display: flex;
   height: auto;
   width: 100vw;
@@ -296,11 +295,10 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.divider {
-  height: 1%;
+header .divider {
+  padding-top: 2px;
   width: 10%;
-  justify-self: center;
-  background-color: #00C7FD;
+  background-color: #00c8ff;
   margin-bottom: 1rem;
 }
 
@@ -339,20 +337,19 @@ svg {
 
 section {
   overflow-x: hidden;
-  margin-top: 1.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  background-color: rgba(15, 15, 15, 1);
 }
 
 .card-scroll {
-  width: 100%;
+  justify-self: center;
+  width: 80%;
   background: rgb(7, 7, 7);
-  padding-bottom: 2rem;
+  padding: 2rem 1rem 2rem 0rem;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 3rem;
+  gap: 4rem;
   scroll-behavior: smooth;
   scrollbar-width: thick;
   scroll-bar: rgb(97,210,241) #651212;
@@ -379,9 +376,7 @@ section {
   width: 350px;
   height: 350px;
   perspective: 1000px;
-  padding: 1rem;
-  padding-bottom: 1rem;
-  
+  margin-top: 1rem;
 }
 
 .card-inner {
@@ -398,26 +393,8 @@ section {
   transform: rotateY(540deg);
 }
 
-.card img {
-  height: 80%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 1rem 1.25rem 2rem .5rem;
-}
 
-.card h2,
-.card h3 {
-  text-align: start;
-}
 
-.card h2 {
-  padding-bottom: .5rem;
-  color: #00C7FD;
-  padding-top: .25rem;
-}
 .card-front, .card-back {
   position: absolute;
   width: 100%;
@@ -433,9 +410,36 @@ section {
 
 .card-front {
   background-color: rgba(252, 252, 252, 1);
-  padding-top: .25rem;
-  padding-left: .75rem;
-  padding-bottom: .5rem;
+}
+
+.top-info {
+  height: 182px;
+  width: 100%;
+  display: relative;
+}
+
+.bottom-pic {
+  height: 141px;
+  width: 100%;
+  padding: 0 .5rem 0rem.5rem;
+}
+
+.card img {
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.top-info h2,
+.top-info h3 {
+  display: block;
+  position: relative;
+  max-height: 91px;
+  width: 100%;
+  text-align: left;
 }
 
  .card-back {
@@ -589,7 +593,140 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+/* **************** MEDIA QUERYS ***************** */
+
+@media (max-width: 1100px) {
+  
+  /* ****************** FONTS ********************* */
+  section .card-scroll .card .card-inner .card-back p {
+    line-height: 1.2rem;
+  }
+
+  #p-1968 {
+    font-size: 1.15rem;
+    padding: .85rem .75rem 1.25rem .75rem;
+    line-height: 1.35;
+    letter-spacing: 1.1px;
+  }
+
+  #p-1971 {
+    font-size: 1.15rem;
+    padding: .7rem .75rem 1.25rem .75rem;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+  }
+
+  #p-1978 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding: 1rem .75rem 1rem .75rem;
+    letter-spacing: 1.1px;
+  }
+
+  #p-1985 {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding: 1.35rem .75rem 1rem .75rem;
+    letter-spacing: 1.1px;
+  }
+
+  #p-2006 {
+    font-size: 1.01rem;
+    padding: 1.1rem .5rem .5rem .5rem;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+  }
+
+  #p-2020 {
+    padding: 1.25rem .5rem .5rem .5rem;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+    font-size: 1.12rem;
+  }
+
+  #p-2022 {
+    margin: 0 0 0 0;
+    padding: 1.15rem .5rem .5rem .5rem;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+    font-size: 1.15rem;
+  }
+
+  #p-2023 {
+    padding: 1rem .5rem .5rem .5rem;
+    margin: 0 0 0 0;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+    font-size: 1.15rem;
+  }
+
+  #p-2024 {
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 0 0 0 0;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+    font-size: 1.1rem;
+  }
 
 
 
 
+
+
+
+  /* ******************CARDS *********************** */
+  .card {
+    width: 275px;
+    height: 350px;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;  }
+
+  .card-back::after {
+    width: 100%; height: 20%;
+   background:
+    linear-gradient(
+      to right,
+       rgba(0, 199, 253, 0.0) 0%,
+       rgba(0, 199, 253, .05) 10%,
+       rgba(25, 168, 213, .1) 30%,
+       rgba(55, 132, 205, .22) 50%,
+       rgba(36, 110, 171, .33) 70%,
+       rgba(38, 96, 162, .6) 90%,
+       rgba(56, 83, 200, .8) 100%
+    ) center bottom / 100% 100% no-repeat,
+      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+  }
+
+  .top-info h2,
+  .top-info h3 {
+  }
+
+  .top-info h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 800;
+    padding-top: 3rem;
+  }
+
+  .top-info h2 {
+    text-align: center;
+    padding-top: .5rem;
+
+  }
+
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 576px) {
+
+}
