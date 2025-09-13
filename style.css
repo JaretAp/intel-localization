@@ -3,13 +3,17 @@
 /* ***********************   Prevention of CSS randomness   *********************** */
 
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0 0;
   padding: 0 0;
 }
 
-*, body, html {
+*,
+body,
+html {
   box-sizing: border-box;
   margin: 0 0;
   padding: 0 0;
@@ -144,7 +148,7 @@
 
 header h1 {
   font-family: "Noto Serif", serif;
-   color:  rgb(240, 240, 240);
+  color: rgb(240, 240, 240);
   font-optical-sizing: auto;
   font-weight: 700;
   font-size: 2rem;
@@ -177,56 +181,87 @@ header div p {
 .top-info h3 {
   font-family: "Noto Serif", serif;
   font-size: 1.35rem;
-  text-shadow:rgba(97, 210, 241, .0) 2.5px -.5px .5px;
+  text-shadow: rgba(97, 210, 241, .0) 2.5px -.5px .5px;
   color: rgb(0, 0, 0);
 }
 
-#p-1968 {
-  padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+ .card-inner .card-back .top-back-info .back-p {
   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+#p-1968 {
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-1971 {
-  padding:  1.5rem 1.75rem 1.5rem 1.75rem;
-  font-size: 1.4rem;
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-1978 {
   font-size: 1.5rem;
-  padding: 1.75rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-1985 {
   font-size: 1.45rem;
-  padding: 1.5rem;
+  line-height: 1.4;
+  padding: 1.35rem .75rem 1rem .75rem;
+  letter-spacing: 1.1px;
 }
 
 #p-2006 {
-  font-size: 1.22rem;
-  padding: 1rem;
+   font-size: 1.3rem;
+  padding: .75rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-2020 {
-  font-size: 1.25rem;
-  padding: 1.25rem;
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-2022 {
-  margin-top: .25rem;
-  padding: 1rem;
-  font-size: 1.35rem;
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-2023 {
-  padding: 1rem;
-  font-size: 1.35rem;
-  margin-top: .5rem;
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 #p-2024 {
-  padding: 1rem 1.25rem 1rem 1.25rem;
-  font-size: 1.33rem;
-  margin-top: .25rem;
+   font-size: 1.3rem;
+  padding: 1.5rem .5rem .5rem .5rem;
+  line-height: 1.3;
+  letter-spacing: 1.1px;
+  text-align: center;
 }
 
 
@@ -270,18 +305,16 @@ header {
   height: auto;
   width: 100vw;
   display: flex;
-  background: linear-gradient(
-  to right,
-  #00C7FDFF 0%,
-  #19A8D5FF 20%,
-  #003C71B4 50%,
-  #003C71F9 100%
-  );
+  background: linear-gradient(to right,
+      #00C7FDFF 0%,
+      #19A8D5FF 20%,
+      #003C71B4 50%,
+      #003C71F9 100%);
   justify-content: center;
   flex-direction: row;
   align-items: center;
   overflow-x: hidden;
-  border-bottom:rgb(97, 210, 241) solid 2.5px;
+  border-bottom: rgb(97, 210, 241) solid 2.5px;
 }
 
 section {
@@ -289,7 +322,7 @@ section {
 }
 
 h1 {
- 
+
   display: block;
   text-align: center;
   margin-bottom: 1rem;
@@ -319,7 +352,7 @@ header div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 header div img {
@@ -331,8 +364,8 @@ header div img {
 }
 
 svg {
-  min-height: 50px;
-  min-width: 30px;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 section {
@@ -352,7 +385,7 @@ section {
   gap: 4rem;
   scroll-behavior: smooth;
   scrollbar-width: thick;
-  scroll-bar: rgb(97,210,241) #651212;
+  scroll-bar: rgb(97, 210, 241);
 }
 
 .card-scroll::-webkit-scrollbar {
@@ -362,40 +395,43 @@ section {
 }
 
 .card-scroll::-webkit-scrollbar-thumb {
-  background:rgb(97, 210, 241);
+  background: rgb(97, 210, 241);
 }
 
 .card-scroll::-webkit-scrollbar-track {
   background: #003C71F9;
 }
 
+.card-scroll .card {
+  padding-left: 1rem;
+}
+
 .card {
-  
+
   flex: 0 0 auto;
   scroll-snap-align: start;
-  width: 350px;
+  width: 400px;
   height: 350px;
   perspective: 1000px;
   margin-top: 1rem;
 }
 
 .card-inner {
-  border:#003C71F9 solid 10px;
-  box-shadow:rgba(97, 210, 241, 1) 0px 0px 15px 7.5px;
+  border: #003C71F9 solid 10px;
+  box-shadow: rgba(97, 210, 241, 1) 0px 0px 15px 7.5px;
   position: relative;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform .9s ease;
+  transition: transform .7s ease;
 }
 
 .card:hover .card-inner {
   transform: rotateY(540deg);
 }
 
-
-
-.card-front, .card-back {
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -442,7 +478,7 @@ section {
   text-align: left;
 }
 
- .card-back {
+.card-back {
   background-color: rgba(97, 210, 241, 1);
   transform: rotateY(180deg);
 }
@@ -452,19 +488,18 @@ section {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%; height: 30%;
-   background:
-    linear-gradient(
-      to right,
-       rgba(0, 199, 253, 0.0) 0%,
-       rgba(0, 199, 253, .05) 10%,
-       rgba(25, 168, 213, .1) 30%,
-       rgba(55, 132, 205, .22) 50%,
-       rgba(36, 110, 171, .33) 70%,
-       rgba(38, 96, 162, .6) 90%,
-       rgba(56, 83, 200, .8) 100%
-    ) center bottom / 100% 100% no-repeat,
-      url("./img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
+  width: 100%;
+  height: 30%;
+  background:
+    linear-gradient(to right,
+      rgba(0, 199, 253, 0.0) 0%,
+      rgba(0, 199, 253, .05) 10%,
+      rgba(25, 168, 213, .1) 30%,
+      rgba(55, 132, 205, .22) 50%,
+      rgba(36, 110, 171, .33) 70%,
+      rgba(38, 96, 162, .6) 90%,
+      rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
+    url("./img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
   z-index: 1;
   pointer-events: none;
   border: none;
@@ -496,22 +531,20 @@ section {
   letter-spacing: inherit;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  text-shadow: rgb(13, 197, 248) 2.5px -.75px .25px; 
+  text-shadow: rgb(13, 197, 248) 2.5px -.75px .25px;
 }
 
 .stack .front {
   position: relative;
   z-index: 1;
   display: inline-block;
-  background: linear-gradient(
-    to top,
-    #00C7FDFF 0%,
-    #00c7fdff 23%,
-    #003C7128 29%,
-    #003c71AF 40%,
-    #F9F9F9 50%,
-    #F9F9F9 100%
-  );
+  background: linear-gradient(to top,
+      #00C7FDFF 0%,
+      #00c7fdff 23%,
+      #003C7128 29%,
+      #003c71AF 40%,
+      #F9F9F9 50%,
+      #F9F9F9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -542,14 +575,12 @@ section {
   position: relative;
   z-index: 1;
   display: inline-block;
-   background: linear-gradient(
-    to top,
-    #003C71F9 0%,
-    #003C71F9 15%,
-    #003C71AF 30%,
-    #F9F9F9 60%,
-    #F9F9F9 100%
-  );
+  background: linear-gradient(to top,
+      #003C71F9 0%,
+      #003C71F9 15%,
+      #003C71AF 30%,
+      #F9F9F9 60%,
+      #F9F9F9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -578,15 +609,13 @@ section {
   position: relative;
   z-index: 1;
   display: inline-block;
-   background: linear-gradient(
-    to top,
-    #00C7FDFF 0%,
-    #00c7fdff 23%,
-    #003C7128 29%,
-    #003c71AF 40%,
-    #F9F9F9 50%,
-    #F9F9F9 100%
-  );
+  background: linear-gradient(to top,
+      #00C7FDFF 0%,
+      #00c7fdff 23%,
+      #003C7128 29%,
+      #003c71AF 40%,
+      #F9F9F9 50%,
+      #F9F9F9 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -595,113 +624,195 @@ section {
 
 /* **************** MEDIA QUERYS ***************** */
 
-@media (max-width: 1100px) {
-  
+@media (max-width: 1099px) {
+
   /* ****************** FONTS ********************* */
   section .card-scroll .card .card-inner .card-back p {
     line-height: 1.2rem;
   }
 
   #p-1968 {
-    font-size: 1.15rem;
-    padding: .85rem .75rem 1.25rem .75rem;
-    line-height: 1.35;
+    font-size: 1.3rem;
+    padding: 1.5rem .5rem .5rem .5rem;
+    line-height: 1.3;
     letter-spacing: 1.1px;
+    text-align: center;
   }
 
   #p-1971 {
-    font-size: 1.15rem;
+    font-size: 1.3rem;
     padding: .7rem .75rem 1.25rem .75rem;
     line-height: 1.4;
     letter-spacing: 1.1px;
   }
 
   #p-1978 {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    padding: 1rem .75rem 1rem .75rem;
-    letter-spacing: 1.1px;
+    font-size: 1.5rem;
   }
 
   #p-1985 {
-    font-size: 1.2rem;
-    line-height: 1.4;
-    padding: 1.35rem .75rem 1rem .75rem;
-    letter-spacing: 1.1px;
+    font-size: 1.4rem;
+    
   }
 
   #p-2006 {
-    font-size: 1.01rem;
-    padding: 1.1rem .5rem .5rem .5rem;
-    line-height: 1.4;
-    letter-spacing: 1.1px;
+    font-size: 1.15rem;
   }
 
   #p-2020 {
-    padding: 1.25rem .5rem .5rem .5rem;
-    line-height: 1.4;
-    letter-spacing: 1.1px;
-    font-size: 1.12rem;
+    font-size: 1.25rem;
   }
 
   #p-2022 {
-    margin: 0 0 0 0;
-    padding: 1.15rem .5rem .5rem .5rem;
-    line-height: 1.4;
-    letter-spacing: 1.1px;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   #p-2023 {
-    padding: 1rem .5rem .5rem .5rem;
-    margin: 0 0 0 0;
-    line-height: 1.4;
-    letter-spacing: 1.1px;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 
   #p-2024 {
-    padding: .5rem .5rem .5rem .5rem;
-    margin: 0 0 0 0;
-    line-height: 1.4;
-    letter-spacing: 1.1px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
-
-
-
-
-
-
 
   /* ******************CARDS *********************** */
   .card {
-    width: 275px;
+    width: 325px;
     height: 350px;
   }
 
   .card img {
     height: 100%;
-    width: 100%;  }
-
-  .card-back::after {
-    width: 100%; height: 20%;
-   background:
-    linear-gradient(
-      to right,
-       rgba(0, 199, 253, 0.0) 0%,
-       rgba(0, 199, 253, .05) 10%,
-       rgba(25, 168, 213, .1) 30%,
-       rgba(55, 132, 205, .22) 50%,
-       rgba(36, 110, 171, .33) 70%,
-       rgba(38, 96, 162, .6) 90%,
-       rgba(56, 83, 200, .8) 100%
-    ) center bottom / 100% 100% no-repeat,
-      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+    width: 100%;
   }
 
-  .top-info h2,
-  .top-info h3 {
+  .card-back::after {
+    width: 100%;
+    height: 20%;
+    background:
+      linear-gradient(to right,
+        rgba(0, 199, 253, 0.0) 0%,
+        rgba(0, 199, 253, .05) 10%,
+        rgba(25, 168, 213, .1) 30%,
+        rgba(55, 132, 205, .22) 50%,
+        rgba(36, 110, 171, .33) 70%,
+        rgba(38, 96, 162, .6) 90%,
+        rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
+      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+  }
+}
+
+@media (min-width: 1099.01px) {
+  #p-1968 {
+    font-size: 1.4rem;
+  }
+  #p-1971 {
+    font-size: 1.5rem;
+  }
+
+  #p-1978 {
+    font-size: 1.7rem;
+  }
+
+  #p-1985 {
+    font-size: 1.45rem;
+  }
+
+  #p-2006 {
+    font-size: 1.2rem;
+    padding-top: 1.75rem;
+  }
+
+  #p-2020 {
+    font-size: 1.3rem;
+    transform: translateY(.5rem);
+  }
+
+  #p-2022 {
+    margin-top: .35rem;
+    font-size: 1.35rem;
+  }
+
+  #p-2023 {
+    font-size: 1.35rem;
+    transform: translateY(.5rem);
+  }
+
+  #p-2024 {
+    font-size: 1.33rem;
+    transform: translateY(.5rem);
+  }
+
+  header {
+    padding-top: 2.5rem;
+  }
+  
+  body .wrapper header div img {
+    height: 80px;
+  }
+
+  header div h1 {
+    font-size: 2.8rem;
+  }
+
+  header div p {
+    max-width: 700px;
+    padding-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  html {
+    padding: 0 0 0 0;
+  }
+
+  #p-1968 {
+    padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  #p-1971 {
+    padding: 1.5rem 1.75rem 1.5rem 1.75rem;
+    font-size: 1.4rem;
+  }
+
+  #p-1978 {
+    font-size: 1.5rem;
+    padding: 1.75rem;
+  }
+
+  #p-1985 {
+    font-size: 1.45rem;
+    padding: 1.5rem;
+  }
+
+  #p-2006 {
+    font-size: 1.22rem;
+    padding: 1rem;
+  }
+
+  #p-2020 {
+    font-size: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  #p-2022 {
+    margin-top: .25rem;
+    padding: 1rem;
+    font-size: 1.35rem;
+  }
+
+  #p-2023 {
+    padding: 1rem;
+    font-size: 1.35rem;
+    margin-top: .5rem;
+  }
+
+  #p-2024 {
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    font-size: 1.33rem;
+    margin-top: .25rem;
   }
 
   .top-info h3 {
@@ -717,16 +828,7 @@ section {
 
   }
 
-
-
-
-
-
-}
-
-
-
-
-@media (max-width: 576px) {
-
+  #p-1968 {
+    font-size: 2.rem;
+  }
 }
