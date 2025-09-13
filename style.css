@@ -303,7 +303,7 @@ h1 {
 header div p {
   min-height: 100px;
   text-align: center;
-  max-width: 700px;
+  max-width: 500px;
   justify-content: center;
   align-items: center;
 
@@ -341,15 +341,31 @@ section {
 }
 
 .card-scroll {
+  width: 100%;
+  background: rgb(7, 7, 7);
   padding-bottom: 2rem;
-  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 3rem;
-  scrollbar-width: 10px;
-  -ms-overflow-style: none; 
+  scroll-behavior: smooth;
+  scrollbar-width: thick;
+  scroll-bar: rgb(97,210,241) #651212;
+}
+
+.card-scroll::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  background: #d8d2d2;
+}
+
+.card-scroll::-webkit-scrollbar-thumb {
+  background:rgb(97, 210, 241);
+}
+
+.card-scroll::-webkit-scrollbar-track {
+  background: #003C71F9;
 }
 
 .card {
@@ -365,8 +381,8 @@ section {
 }
 
 .card-inner {
-  border:rgb(97, 210, 241) solid 3px;
-  box-shadow:rgba(97, 210, 241, .3) 0px 0px 10px 20px;
+  border:#003C71F9 solid 10px;
+  box-shadow:rgba(97, 210, 241, 1) 0px 0px 15px 7.5px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -421,7 +437,6 @@ section {
  .card-back {
   background-color: rgba(97, 210, 241, 1);
   transform: rotateY(180deg);
-
 }
 
 .card-back::after {
@@ -444,6 +459,7 @@ section {
       url("./img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
   z-index: 1;
   pointer-events: none;
+  border: none;
 }
 
 .instructions {
@@ -457,10 +473,6 @@ section {
 .bang {
   margin-top: -1.75rem;
   padding: 0 .5rem 0 .5rem;
-}
-
-.scroll-text {
-
 }
 
 
