@@ -429,8 +429,21 @@ section {
   transition: transform .9s ease;
 }
 
+@keyframes spinAndFlip {
+  0% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateZ(360deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg) rotateY(180deg); /* Spin in a circle */
+  }
+}
+
+/* When you hover over the card, play the spinAndFlip animation for 1 second */
 .card:hover .card-inner {
-  transform: rotateY(180deg);
+  animation: spinAndFlip 1s forwards;
 }
 
 .card-front,
