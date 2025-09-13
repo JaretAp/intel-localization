@@ -173,36 +173,42 @@ header div p {
 }
 
 .top-info h2 {
-  text-shadow: black 2px -.5px .5px;
-  font-size: 3rem;
+  text-shadow: black 2px -.75px .6px;
+  font-size: 4rem;
   color: #00C7FDFF;
 }
 
 .top-info h3 {
   font-family: "Noto Serif", serif;
+  font-weight: 900;
   font-size: 1.35rem;
-  text-shadow: rgba(97, 210, 241, .0) 2.5px -.5px .5px;
-  color: rgb(0, 0, 0);
+  text-shadow: #00C7FDFF .75px -1px .5px;
+  color: rgb(5, 5, 5);
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  line-height: 2rem;
 }
 
- .card-inner .card-back .top-back-info .back-p {
+.card-inner .card-back .top-back-info .back-p {
   font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
   text-align: center;
+  text-shadow: black 1.5px -.75px .6px;
 }
 
 #p-1968 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
   text-align: center;
+  text-shadow: black 1.5px -.75px .6px;
 }
 
 #p-1971 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -225,7 +231,7 @@ header div p {
 }
 
 #p-2006 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: .75rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -233,7 +239,7 @@ header div p {
 }
 
 #p-2020 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -241,7 +247,7 @@ header div p {
 }
 
 #p-2022 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -249,7 +255,7 @@ header div p {
 }
 
 #p-2023 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -257,7 +263,7 @@ header div p {
 }
 
 #p-2024 {
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   padding: 1.5rem .5rem .5rem .5rem;
   line-height: 1.3;
   letter-spacing: 1.1px;
@@ -475,7 +481,16 @@ section {
   position: relative;
   max-height: 91px;
   width: 100%;
-  text-align: left;
+  text-align: center;
+}
+
+.top-info h2 {
+  padding-top: 1rem;
+}
+
+.top-info h3 {
+  padding-top: 1.5rem;
+
 }
 
 .card-back {
@@ -531,7 +546,7 @@ section {
   letter-spacing: inherit;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  text-shadow: rgb(13, 197, 248) 2.5px -.75px .25px;
+  text-shadow: rgb(13, 197, 248) 1.75px -.5px .4px;
 }
 
 .stack .front {
@@ -568,7 +583,7 @@ section {
   letter-spacing: inherit;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  text-shadow: rgb(13, 197, 248) 2.5px -.75px .25px;
+  text-shadow: rgb(13, 197, 248) 1.75px -.5px .4px;
 }
 
 .stack-2 .front-2 {
@@ -602,7 +617,7 @@ section {
   letter-spacing: inherit;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  text-shadow: rgb(13, 197, 248) 2.5px -.75px .25px;
+  text-shadow: rgb(13, 197, 248) 1.75px -.5px .4px;
 }
 
 .stack-3 .front-3 {
@@ -652,7 +667,7 @@ section {
 
   #p-1985 {
     font-size: 1.4rem;
-    
+
   }
 
   #p-2006 {
@@ -674,6 +689,13 @@ section {
   #p-2024 {
     font-size: 1.2rem;
   }
+
+  .instructions .stack .scroll-text,
+  .instructions .stack-3 .scroll-text {
+    font-size: 1.5rem;
+  }
+
+
 
   /* ******************CARDS *********************** */
   .card {
@@ -706,6 +728,7 @@ section {
   #p-1968 {
     font-size: 1.4rem;
   }
+
   #p-1971 {
     font-size: 1.5rem;
   }
@@ -746,7 +769,7 @@ section {
   header {
     padding-top: 2.5rem;
   }
-  
+
   body .wrapper header div img {
     height: 80px;
   }
@@ -762,19 +785,20 @@ section {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 615px) {
   html {
     padding: 0 0 0 0;
   }
 
   #p-1968 {
-    padding: 1.25rem 1.5rem 1.5rem 1.5rem;
-    font-size: 1.3rem;
+    padding: 1.75rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+    transform: translateY(1rem);
   }
 
   #p-1971 {
-    padding: 1.5rem 1.75rem 1.5rem 1.75rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    transform: translateY(3rem);
   }
 
   #p-1978 {
@@ -783,34 +807,29 @@ section {
   }
 
   #p-1985 {
-    font-size: 1.45rem;
-    padding: 1.5rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1.25rem 1rem;
   }
 
   #p-2006 {
-    font-size: 1.22rem;
-    padding: 1rem;
+    font-size: 1.2rem;
   }
 
   #p-2020 {
-    font-size: 1.25rem;
-    padding: 1.25rem;
+    font-size: 1.3rem;
+    padding: 1.5rem .5rem 1rem .5rem;
   }
 
   #p-2022 {
     margin-top: .25rem;
-    padding: 1rem;
     font-size: 1.35rem;
   }
 
   #p-2023 {
-    padding: 1rem;
-    font-size: 1.35rem;
-    margin-top: .5rem;
+    font-size: 1.3rem;
   }
 
   #p-2024 {
-    padding: 1rem 1.25rem 1rem 1.25rem;
     font-size: 1.33rem;
     margin-top: .25rem;
   }
@@ -828,7 +847,129 @@ section {
 
   }
 
-  #p-1968 {
-    font-size: 2.rem;
+  header h1 {
+    font-size: 1rem;
+    max-width: 90%;
+    min-width: 225px;
   }
+
+  header div p {
+    font-size: .7rem;
+    max-width: 90%;
+    min-width: 225px;
+  }
+
+  header div .divider {
+    width: 60px;
+    height: 2px;
+  }
+
+  header div img {
+    min-width: 80px;
+  }
+
+  .instructions {
+    flex-direction: column;
+  }
+
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: .3rem;
+    padding-top: 1rem;
+  }
+
+  .stack-2 {
+    display: none;
+  }
+
+  .instructions .stack .scroll-text,
+  .instructions .stack-3 .scroll-text {
+    font-size: 1rem;
+    transform: translateY(-10px);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  .stack-3 .shadow-3 {
+    text-shadow: none;
+  }
+
+  .stack .shadow {
+    text-shadow: none;
+  }
+
+  .stack .front,
+  .stack-3 .front-3 {
+
+    background: linear-gradient(to top,
+      #00C7FDFF 0%,
+      #00c7fdff 23%,
+      #00C7FDFF 35%,
+      #F9F9F9 45%,
+      #F9F9F9 100%);
+       -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    line-height: 16px;
+    transform: translateY(-40px);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    min-width: 255px;
+    text-align: center;
+  }
+
+    .card {
+    width: 280px;
+    height: 400px;
+  }
+
+  .card img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-back::after {
+    width: 100%;
+    height: 20%;
+    background:
+      linear-gradient(to right,
+        rgba(0, 199, 253, 0.0) 0%,
+        rgba(0, 199, 253, .05) 10%,
+        rgba(25, 168, 213, .1) 30%,
+        rgba(55, 132, 205, .22) 50%,
+        rgba(36, 110, 171, .33) 70%,
+        rgba(38, 96, 162, .6) 90%,
+        rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
+      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+  }
+
+  .card-scroll {
+    width: 96%;
+  }
+
+  *,
+  body,
+  section,
+  div,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  span,
+  header {
+    min-width: 220px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
 }
