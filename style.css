@@ -1,50 +1,295 @@
 /* Add your CSS here */
 
+
+/*  ******************         Notes to use for projects        *************************  */
+
+/*
+.grenze-thin {
+  font-family: "Grenze", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.grenze-extralight {
+  font-family: "Grenze", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.grenze-light {
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.grenze-regular {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-medium {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grenze-semibold {
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.grenze-bold {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.grenze-extrabold {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.grenze-black {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.grenze-thin-italic {
+  font-family: "Grenze", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.grenze-extralight-italic {
+  font-family: "Grenze", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.grenze-light-italic {
+  font-family: "Grenze", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.grenze-regular-italic {
+  font-family: "Grenze", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.grenze-medium-italic {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.grenze-semibold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.grenze-bold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.grenze-extrabold-italic {
+  font-family: "Grenze", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.grenze-black-italic {
+  font-family: "Grenze", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>; 100-900 normal or italic
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+*/
+
+/************************************** Font Stylization ***************************************** */
+
+header h1 {
+  font-family: "Noto Serif", serif;
+   color:  rgb(240, 240, 240);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+header div p {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 1.15rem;
+    color: rgb(240, 240, 240);
+}
+
+section .card-scroll .card .card-inner .card-back p {
+  padding: 1rem 1rem;
+  font-family: "Grenze", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-shadow: rgb(5, 5, 5) 1.5px -1.5px;
+}
+
+#p-1968 {
+  padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+}
+
+#p-1971 {
+  padding:  1.5rem 1.75rem 1.5rem 1.75rem;
+}
+
+#p-1978 {
+  font-size: 1.6rem;
+  padding: 1.75rem;
+}
+
+#p-1985 {
+  padding :1.6rem;
+  padding: 1.75rem;
+}
+
+#p-2006 {
+  font-size: 1.3rem;
+  padding: 1.2rem 1.2rem 1.2rem;
+}
+
+#p-2020 {
+  font-size: 1.3rem;
+  padding: 1.5rem;
+}
+
+#p-2022 {
+  margin-top: .25rem;
+  padding: 1.5rem;
+}
+
+#p-2023 {
+  padding: 1.25rem;
+  margin-top: .5rem;
+}
+
+#p-2024 {
+  padding: 1rem 1.5rem 1.25rem 1.5rem;
+}
+
+.card-scroll .card .card-inner .card-front h2 {
+  text-shadow: black 1px -.75px;
+  margin-top: .6rem;
+  padding-left: .5rem;
+  font-size: 1.7rem;
+}
+
+.card-scroll .card .card-inner .card-front h3 {
+  font-family: "Noto Serif", serif;
+  
+  padding-left: .5rem;
+  margin-top: .5rem;
+  font-size: 1.30rem;
+  margin-bottom: -.5rem;
+  letter-spacing: 1px;
+  text-shadow:rgb(97, 210, 241) 1.5px -1px;
+}
+
+.scroll-text {
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(217, 209, 209);
+  font-size: 3rem;
+  text-shadow: rgb(205, 187, 187) .5px .5px;
+}
+
+  .bang {
+  margin: 0 0 0 0;
+  font-family: "Grenze", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: none;
+  font-size: 5rem;
+  color: rgb(217, 209, 209);
+  font-size: 5rem;
+  text-shadow: rgb(205, 187, 187) .5px .5px;
+}
+
+
+/* ***********************   Prevention of CSS randomness   *********************** */
+
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0 0;
   padding: 0 0;
 }
 
-html {
+*, body, html {
   box-sizing: border-box;
   margin: 0 0;
+  padding: 0 0;
 }
+
+
+/* ***********************  Sizing Elements  **************************** */
+
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: rgb(11, 11, 11);
+  background-color: rgba(15, 15, 15, 1);
 }
 
 header {
-  padding-top: 1rem;
+  padding-top: .5rem;
   display: flex;
   height: auto;
   width: 100vw;
   display: flex;
   background: linear-gradient(
   to right,
-  #00C7FD 0%,
-  #00C7FD 10%,
-  #19A8D5 30%,
-  #3784cd 50%,
-  #246eab 70%,
-  #2660a2 90%,
-  #3853c8 100%
+  #00C7FDFF 0%,
+  #19A8D5FF 20%,
+  #003C71B4 50%,
+  #003C71F9 100%
   );
   justify-content: center;
   flex-direction: row;
   align-items: center;
   overflow-x: hidden;
+  border-bottom:rgb(97, 210, 241) solid 2.5px;
+}
+
+section {
+  background-color: rgb(249, 249, 249);
 }
 
 h1 {
-  color:  rgb(240, 240, 240);
+ 
   display: block;
   text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .divider {
@@ -52,23 +297,22 @@ h1 {
   width: 10%;
   justify-self: center;
   background-color: #00C7FD;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 header div p {
   min-height: 100px;
   text-align: center;
-  font-size: 1.75rem;
   max-width: 700px;
   justify-content: center;
   align-items: center;
-  color: rgb(240, 240, 240);
+
 
 }
 
 header div {
   display: flex;
-  height: 400px;
+  height: 225px;
   width: 100vw;
   flex-direction: column;
   justify-content: center;
@@ -80,8 +324,8 @@ header div img {
   height: 50px;
   width: 100%;
   display: flex;
-  margin-top: -2rem;
-  margin-bottom: 2rem;
+  padding-bottom: .8rem;
+  padding-top: .5rem;
 }
 
 svg {
@@ -97,30 +341,32 @@ section {
 }
 
 .card-scroll {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 2rem 0;
-  scrollbar-width: none;
+  gap: 3rem;
+  scrollbar-width: 10px;
   -ms-overflow-style: none; 
 }
 
-.card-scroll::-webkit-scrollbar {
-  display: none;
-}
-
 .card {
+  
   flex: 0 0 auto;
   scroll-snap-align: start;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   perspective: 1000px;
   padding: 1rem;
+  padding-bottom: 1rem;
   
 }
 
 .card-inner {
+  border:rgb(97, 210, 241) solid 3px;
+  box-shadow:rgba(97, 210, 241, .3) 0px 0px 10px 20px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -139,7 +385,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 1rem .75rem 1rem 0rem;
+  padding: 1rem 1.25rem 2rem .5rem;
 }
 
 .card h2,
@@ -162,7 +408,7 @@ section {
 }
 
 .card-back p {
-  color: FFF;
+  color: #fff;
 }
 
 .card-front {
@@ -171,15 +417,52 @@ section {
   padding-left: .75rem;
   padding-bottom: .5rem;
 }
+
  .card-back {
-  background-color: rgba(0, 199, 253, .2);
+  background-color: rgba(97, 210, 241, 1);
   transform: rotateY(180deg);
+
+}
+
+.card-back::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; height: 30%;
+   background:
+    linear-gradient(
+      to right,
+       rgba(0, 199, 253, 0.0) 0%,
+       rgba(0, 199, 253, .05) 10%,
+       rgba(25, 168, 213, .1) 30%,
+       rgba(55, 132, 205, .22) 50%,
+       rgba(36, 110, 171, .33) 70%,
+       rgba(38, 96, 162, .6) 90%,
+       rgba(56, 83, 200, .8) 100%
+    ) center bottom / 100% 100% no-repeat,
+      url("./img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.instructions {
+  padding-top: 1rem;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.bang {
+  margin-top: -1.75rem;
+  padding: 0 .5rem 0 .5rem;
 }
 
 .scroll-text {
-  color: rgb(252, 252, 252);
-  font-size: 1.5rem;
-  text-align: center;
+
 }
+
+
 
 
