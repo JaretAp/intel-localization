@@ -972,5 +972,17 @@ section {
     padding-left: 0;
   }
 
+  .card-scroll {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .instructions .scroll-content .stack span,
+  .instructions .scroll-content .stack-3 span  {
+    font-size: 1.2rem;
+    transform: translateY(-2rem);
+
+  }
+
 
 }
