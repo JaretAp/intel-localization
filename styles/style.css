@@ -1,5 +1,3 @@
-/* Add your CSS here */
-
 /* ***********************   Prevention of CSS randomness   *********************** */
 
 
@@ -146,12 +144,6 @@ html {
 
 /************************************** Font Stylization ***************************************** */
 
-
-
-
-/* Hides the "Powered by Google" text while keeping dropdown visible */
-
-/* Google Translate Dropdown */
 
 
 header h1 {
@@ -436,17 +428,21 @@ section {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   transition: transform .9s ease;
+  transform: translateX(-.5rem);
 }
 
 @keyframes spinAndFlip {
   0% {
     transform: rotateZ(0deg) rotateY(0deg);
   }
+
   50% {
     transform: rotateZ(360deg) rotateY(0deg);
   }
+
   100% {
-    transform: rotateZ(360deg) rotateY(180deg); /* Spin in a circle */
+    transform: rotateZ(360deg) rotateY(180deg) translateX(.5rem);
+    /* Spin in a circle */
   }
 }
 
@@ -454,9 +450,11 @@ section {
   0% {
     transform: rotateZ(360deg) rotateY(180deg);
   }
+
   50% {
     transform: rotateZ(360deg) rotateY(0deg);
   }
+
   100% {
     transform: rotateZ(0deg) rotateY(180deg);
   }
@@ -950,12 +948,12 @@ section {
   .stack-3 .front-3 {
 
     background: linear-gradient(to top,
-      #00C7FDFF 0%,
-      #00c7fdff 23%,
-      #00C7FDFF 35%,
-      #F9F9F9 45%,
-      #F9F9F9 100%);
-       -webkit-background-clip: text;
+        #00C7FDFF 0%,
+        #00c7fdff 23%,
+        #00C7FDFF 35%,
+        #F9F9F9 45%,
+        #F9F9F9 100%);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
@@ -967,7 +965,7 @@ section {
     text-align: center;
   }
 
-    .card {
+  .card {
     width: 280px;
     height: 400px;
   }
@@ -989,10 +987,12 @@ section {
         rgba(36, 110, 171, .33) 70%,
         rgba(38, 96, 162, .6) 90%,
         rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
-      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+      url("../img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
   }
 
   .card-scroll {
+    padding-left: 0;
+    padding-right: 0;
     width: 96%;
   }
 
@@ -1016,24 +1016,28 @@ section {
 
   .card-scroll {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .instructions .scroll-content .stack span,
-  .instructions .scroll-content .stack-3 span  {
+  .instructions .scroll-content .stack-3 span {
     font-size: 1.2rem;
     transform: translateY(-2rem);
-
   }
+
+
 }
+
+
 
 /* Reset protection for Google Translate */
 
 .translate-wrapper {
   position: fixed;
-  top: 3rem;
+
   left: 1rem;
   z-index: 9099;
+  top: 1rem;
 }
 
 #google_translate_element {
@@ -1041,3 +1045,19 @@ section {
   width: auto;
 }
 
+@media (max-width: 615px) {
+  .translate-wrapper {
+    position: fixed;
+    top: 14.25rem;
+    left: calc(50% - 78px);
+    z-index: 9099;
+  }
+
+  #google_translate_element,
+  #google_translate_element * {
+    min-width: auto !important;
+    width: auto !important;
+    display: inline-block !important;
+    box-shadow: none;
+  }
+}
