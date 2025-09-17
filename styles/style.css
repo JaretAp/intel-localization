@@ -146,6 +146,14 @@ html {
 
 /************************************** Font Stylization ***************************************** */
 
+
+
+
+/* Hides the "Powered by Google" text while keeping dropdown visible */
+
+/* Google Translate Dropdown */
+
+
 header h1 {
   font-family: "Noto Serif", serif;
   color: rgb(253, 253, 253);
@@ -539,7 +547,7 @@ section {
       rgba(36, 110, 171, .33) 70%,
       rgba(38, 96, 162, .6) 90%,
       rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
-    url("./img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
+    url("../img/intel-header-logo.svg") center bottom / 200px auto no-repeat;
   z-index: 1;
   pointer-events: none;
   border: none;
@@ -755,7 +763,7 @@ section {
         rgba(36, 110, 171, .33) 70%,
         rgba(38, 96, 162, .6) 90%,
         rgba(56, 83, 200, .8) 100%) center bottom / 100% 100% no-repeat,
-      url("./img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
+      url("../img/intel-header-logo.svg") center bottom / 155px auto no-repeat;
   }
 }
 
@@ -1017,6 +1025,19 @@ section {
     transform: translateY(-2rem);
 
   }
-
-
 }
+
+/* Reset protection for Google Translate */
+
+.translate-wrapper {
+  position: fixed;
+  top: 3rem;
+  left: 1rem;
+  z-index: 9099;
+}
+
+#google_translate_element {
+  display: inline-block;
+  width: auto;
+}
+

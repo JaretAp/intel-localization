@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
-  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -14,13 +14,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css?v=001" />
+ 
 </head>
 
 <body>
+  <div class="translate-wrapper">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
   <div class="wrapper">
     <!-- Header / Hero Section -->
     <header>
       <div>
+        
+
         <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
         <img src="img/intel-header-logo.svg" alt="Intel Logo" />
         <!-- Main Heading -->
@@ -30,7 +44,7 @@
         <div class="divider"></div>
 
         <!-- Subheading / Description -->
-        <p>
+        <p lang="ar">
           Explore Intel's journey through time, discovering how our commitment
           to innovation has shaped a more sustainable future for technology
           and our planet.
@@ -298,6 +312,8 @@
       </h3>
     </div>
   </div>
+  <script src=""></script>
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
