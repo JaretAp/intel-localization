@@ -995,8 +995,7 @@ section {
     padding-right: 0;
     width: 96%;
   }
-
-  *,
+  
   body,
   section,
   div,
@@ -1037,7 +1036,7 @@ section {
 
   left: 1rem;
   z-index: 9099;
-  top: 1rem;
+  top: 2.5rem;
 }
 
 #google_translate_element {
@@ -1045,12 +1044,14 @@ section {
   width: auto;
 }
 
+
 @media (max-width: 615px) {
   .translate-wrapper {
     position: fixed;
     top: 14.25rem;
-    left: calc(50% - 78px);
+    left: 1rem;
     z-index: 9099;
+    box-shadow: none !important;
   }
 
   #google_translate_element,
@@ -1058,6 +1059,16 @@ section {
     min-width: auto !important;
     width: auto !important;
     display: inline-block !important;
-    box-shadow: none;
+    box-shadow: none !important;
   }
+
+  .goog-te-menu-frame {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+body {
+  top: 0px !important; /* prevents body being pushed down */
+}
+
 }
