@@ -678,7 +678,7 @@ section {
 
 /* **************** MEDIA QUERYS ***************** */
 
-@media (max-width: 1099px) {
+@media (max-width: 1099.2px) {
 
   /* ****************** FONTS ********************* */
   section .card-scroll .card .card-inner .card-back p {
@@ -736,6 +736,13 @@ section {
     font-size: 1.5rem;
   }
 
+  .instructions .stack .shadow,
+  .instructions .stack-3 .shadow-3 {
+    text-shadow: rgb(13, 197, 248) .5px -0px .2px;
+    font-size: 1.5rem;
+    transform: translateY(.20rem) translateX(.05rem);
+  }
+
 
 
   /* ******************CARDS *********************** */
@@ -765,7 +772,7 @@ section {
   }
 }
 
-@media (min-width: 1099.01px) {
+@media (min-width: 1099.201px) {
   #p-1968 {
     font-size: 1.4rem;
   }
@@ -824,6 +831,23 @@ section {
     padding-bottom: 1rem;
   }
 
+}
+
+@media (max-width: 729.5px) {
+  body.rtl-mode .instructions .stack .scroll-text,
+  body.rtl-mode .instructions .stack-3 .scroll-text {
+    font-size: 1.15rem;
+  }
+
+  .body.rtl-mode .stack-3 .shadow-3,
+  .body.rtl-mode .stack .shadow {
+    text-shadow: none;
+  }
+
+  .instructions .stack .shadow,
+  .instructions .stack-3 .shadow-3 {
+    text-shadow: none;
+  }
 }
 
 @media (max-width: 615px) {
@@ -1023,6 +1047,17 @@ section {
     font-size: 1.2rem;
     transform: translateY(-2rem);
   }
+}
+
+@media (max-width: 300px) {
+  .card-scroll {
+    overflow-x:visible;
+  }
+
+  .instructions .scroll-content .stack span,
+  .instructions .scroll-content .stack-3 span {
+    min-width: 280px;
+  }
 
 
 }
@@ -1032,11 +1067,15 @@ section {
 /* Reset protection for Google Translate */
 
 .translate-wrapper {
-  position: fixed;
+  position: absolute;
 
   left: 1rem;
   z-index: 9099;
-  top: 2.5rem;
+  top: 2rem;
+}
+
+.body.rtl-mode .translate-wrapper {
+  top: 3rem;
 }
 
 #google_translate_element {
@@ -1044,11 +1083,16 @@ section {
   width: auto;
 }
 
+.body.rtl-mode .translate-wrapper {
+  left: 0rem;
+  right: 1rem;
+}
+
 
 @media (max-width: 615px) {
   .translate-wrapper {
-    position: fixed;
-    top: 14.25rem;
+    position: absolute;
+    top: 15rem;
     left: 1rem;
     z-index: 9099;
     box-shadow: none !important;
@@ -1066,9 +1110,13 @@ section {
     background: transparent !important;
     box-shadow: none !important;
   }
+}
 
 body {
   top: 0px !important; /* prevents body being pushed down */
-}
+  }
 
-}
+  body.rtl-mode {
+    text-align: right;
+    top: 0px !important;
+  }
