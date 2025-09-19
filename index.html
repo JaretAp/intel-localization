@@ -5,38 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
-  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" id="bootstrap-css" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles/style.css?v=002" />
   <script src="apps/app.js" defer></script>
- 
+
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <div class="translate-wrapper">
-  <div id="google_translate_element"></div>
+    <div id="google_translate_element"></div>
 
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en',
-   includedLanguages: 'en,es,fr,de,zh,ar,vi,ko,ja',
-   layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'en,es,fr,de,zh,ar,vi,ko,ja',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
 
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</div>
-  <div class="wrapper">
+    <script type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
+ 
     <!-- Header / Hero Section -->
     <header>
       <div>
-        
+
 
         <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
         <img src="img/intel-header-logo.svg" alt="Intel Logo" />
@@ -56,6 +62,8 @@ function googleTranslateElementInit() {
     </header>
 
     <!-- Timeline Cards Section -->
+
+     <div class="wrapper container-xxl flex-fill w-100">
     <section>
       <div class="card-scroll">
         <!-- Card 1: 1968 -->
@@ -314,8 +322,65 @@ function googleTranslateElementInit() {
         </span>
       </h3>
     </div>
+   
+
+      <div class="row text-center g-4 pt-sm-5 flex-column flex-md-row">
+        
+        <div class="col-8 col-sm-6 col-md-4 mx-auto sustain py-3">
+          <div class="col-12 col-xxl-11 mx-auto bg-white h-100 d-flex flex-column p-3 h-100 d-flex flex-column">
+            <div class="row d-flex">
+              <h3 class="fs-2 fw-bold col-8 text-end">Waste</h3>
+              <div class="img-box col-4 justify-content-start d-flex">
+                 <img src="img/recycle.svg" alt="recycling icon"  id="recycling">
+            </div>
+              </div>
+             
+         
+          <p class="fs-6 mb-4 text-center">See how we’re using circular economics to reduce waste and cut costs.</p>
+          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html" title="Intel and the Environment" class="mt-auto"><button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
+        </div>
+        </div>
+
+        <div class="col-8 col-sm-6 col-md-4 mx-auto sustain py-3">
+           <div class="col-12 col-xxl-11 mx-auto bg-white h-100 d-flex flex-column p-3 h-100 d-flex flex-column">
+            <div class="row d-flex">
+              <h3 class="fs-2 fw-bold col-8 text-end">Energy</h3>
+            <div class="img-box col-4 justify-content-start d-flex">
+              <img src="img/power.svg" alt="power icon" id="power">
+            </div>
+            </div>
+          <p class="fs-6 mb-4 text-center">Learn more about our progress to reach 100% renewable electricity.</p>
+          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html" title="Intel and the Environment" class="mt-auto"><button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
+        </div>
+        </div>
+
+        <div class="col-8 col-sm-6 col-md-4 mx-auto sustain py-3">
+           <div class="col-12 col-xxl-11 mx-auto bg-white h-100 d-flex flex-column p-3 h-100 d-flex flex-column">
+            <div class="row d-flex">
+              <h3 class="fs-2 fw-bold text-end col-8">Water</h3>
+              <div class="col-4 img-box justify-content-start d-flex">
+                <img src="img/droplet.svg" alt="water or droplet icon"  id="water">
+              </div>
+            </div>
+          
+          <p class="fs-6 mb-4 text-center fs-md-1">Explore agriculturally focused, conservation-centered or in-stream flow protection water restoration
+            projects.</p>
+          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html" title="Intel and the Environment" class="mt-auto"><button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
+            
+        </div>
+        </div>
+
+      </div>
+
+    
   </div>
-  <script src=""></script>
+  <footer class="d-flex justify-content-between mt-5">
+    <p class="fs-5 my-auto text-light ms-3 fst-italic" id="intel-slogan">That's the power of Intel inside</p>
+    <a href="https://www.intel.com" target="_blank" title="intel website" rel="noopener" class="my-auto">
+      <img src="img/intel-header-logo.svg" id="intel-foot" alt="Intel icon" class="my-auto me-3">
+    </a>
+    
+    </footer>
   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

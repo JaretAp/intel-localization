@@ -295,6 +295,7 @@ header div p {
 
 body {
   background-color: rgba(15, 15, 15, 1);
+  transition: all 0.25s ease-in-out;
 }
 
 .wrapper {
@@ -676,6 +677,35 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+.sustain {
+  min-height: 14rem;
+}
+
+footer {
+  min-width: 280px;
+  min-height: 3rem;
+  margin-top: 4rem;
+  width: 100%;
+  background: linear-gradient(to right,
+      #00C7FDFF 0%,
+      #19A8D5FF 20%,
+      #003C71B4 50%,
+      #003C71F9 100%);
+}
+
+footer #intel-foot {
+  height: 24px;
+  width: auto;
+
+}
+
+.sustain h3 img,
+.sustain .row .img-box img {
+  height: 40px !important;
+  width:  40px !important;
+}
+
+
 /* **************** MEDIA QUERYS ***************** */
 
 @media (max-width: 1099.2px) {
@@ -772,6 +802,7 @@ section {
   }
 }
 
+
 @media (min-width: 1099.201px) {
   #p-1968 {
     font-size: 1.4rem;
@@ -834,10 +865,21 @@ section {
 }
 
 @media (max-width: 729.5px) {
+
   body.rtl-mode .instructions .stack .scroll-text,
   body.rtl-mode .instructions .stack-3 .scroll-text {
     font-size: 1.15rem;
+    background: linear-gradient(to top,
+      #00C7FDFF 0%,
+      #00c7fdff 23%,
+     #00C7fdff 100%);
+      -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
   }
+  
+  
 
   .body.rtl-mode .stack-3 .shadow-3,
   .body.rtl-mode .stack .shadow {
@@ -960,6 +1002,11 @@ section {
     padding: 0 0 0 0;
   }
 
+  body.rtl-mode .instructions .stack .scroll-text,
+  .instructions .stack .scroll-text {
+    display: none;
+  }
+
   .stack-3 .shadow-3 {
     text-shadow: none;
   }
@@ -1019,18 +1066,10 @@ section {
     padding-right: 0;
     width: 96%;
   }
-  
+
   body,
-  section,
-  div,
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  span,
   header {
-    min-width: 220px;
+    min-width: 280px;
     margin-left: 0;
     margin-right: 0;
     padding-right: 0;
@@ -1051,7 +1090,7 @@ section {
 
 @media (max-width: 300px) {
   .card-scroll {
-    overflow-x:visible;
+    overflow-x: visible;
   }
 
   .instructions .scroll-content .stack span,
@@ -1110,13 +1149,35 @@ section {
     background: transparent !important;
     box-shadow: none !important;
   }
+
+  .sustain {
+    min-height: 14rem;
+    min-width: 270px;
+  }
+
+  body.rtl-mode .instructions .stack .scroll-text {
+    font-size: .75rem;
+  }
+}
+
+@media (max-width: 410px) {
+  footer #intel-slogan {
+    margin-left: .5rem !important;
+    font-size: .85rem !important;
+  } 
 }
 
 body {
-  top: 0px !important; /* prevents body being pushed down */
-  }
+  top: 0px !important;
+  /* prevents body being pushed down */
+  overflow-x: hidden;
+}
 
-  body.rtl-mode {
-    text-align: right;
-    top: 0px !important;
-  }
+body.rtl-mode {
+  text-align: right;
+  top: 0px !important;
+}
+
+.row {
+  overflow-x: hidden;
+}
