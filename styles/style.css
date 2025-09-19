@@ -699,10 +699,34 @@ footer #intel-foot {
 
 }
 
-.sustain h3 img,
+
 .sustain .row .img-box img {
   height: 40px !important;
   width:  40px !important;
+}
+
+.sustain .row .img-box #power:hover {
+  background-color: rgba(229, 115, 115, .3);
+}
+
+#energy:hover {
+  color: rgba(229, 115, 115, .3);
+}
+
+.sustain .row .img-box #recycling:hover {
+  background-color:rgba(83, 208, 127, .3);
+}
+
+#waste:hover {
+  color: rgba(83, 208, 127, .3);
+}
+
+.sustain .row .img-box #water:hover {
+    background-color: rgba(13, 0, 255, 0.53);
+}
+
+#droplet:hover {
+  color: rgba(13, 0, 255, 0.53);
 }
 
 
