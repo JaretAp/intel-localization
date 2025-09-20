@@ -1227,10 +1227,13 @@ body.rtl-mode {
 .modal-body .modal-text {
   color: whitesmoke;
   font-style: italic;
+  text-align: center;
 }
 
 .modal-next-steps {
   font-weight: bold;
+  text-align: center;
+  font-size: 1.75rem;
 }
 
 .modal-footer {
