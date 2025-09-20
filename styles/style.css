@@ -699,6 +699,9 @@ footer #intel-foot {
 
 }
 
+#newsletter-cta {
+  color:  rgb(97, 210, 241);
+}
 
 .sustain .row .img-box img {
   height: 40px !important;
