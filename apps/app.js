@@ -57,3 +57,35 @@ observer.observe(document.documentElement, { attributes: true, attributeFilter: 
 
 
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+
+
+const wasteModal = document.getElementById('intelWasteModal')
+if (wasteModal) {
+  wasteModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget
+
+    const modalTitle = wasteModal.querySelector('.modal-title')
+    const modalBodyInput = wasteModal.querySelector('.modal-body input')
+  })
+}
+
+const powerModal = document.getElementById('intelPowerModal')
+if (powerModal) {
+  powerModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget
+
+    const modalTitle = powerModal.querySelector('.modal-title')
+    const modalBodyInput = powerModal.querySelector('.modal-body input')
+  })
+}
+
+const waterModal = document.getElementById('intelWaterModal')
+if (waterModal) {
+  waterModal.addEventListener('show.bs.modal', event => {
+    const button = event.relatedTarget
+
+    const modalTitle = waterModal.querySelector('.modal-title')
+    const modalBodyInput = waterModal.querySelector('.modal-body input')
+  })
+}
+

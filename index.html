@@ -334,12 +334,9 @@
               <img src="img/recycle.svg" alt="recycling icon" id="recycling">
             </div>
           </div>
-
-
           <p class="fs-6 mb-4 text-center">See how we’re using circular economics to reduce waste and cut costs.</p>
-          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html"
-            title="Intel and the Environment" class="mt-auto"><button type="button"
-              class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
+          <button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4" data-bs-toggle="modal"
+              data-bs-target="#intelWasteModal">Learn More</button></a>
         </div>
       </div>
 
@@ -352,9 +349,8 @@
             </div>
           </div>
           <p class="fs-6 mb-4 text-center">Learn more about our progress to reach 100% renewable electricity.</p>
-          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html"
-            title="Intel and the Environment" class="mt-auto"><button type="button"
-              class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
+         <button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4" data-bs-toggle="modal"
+              data-bs-target="#intelPowerModal">Learn More</button></a>
         </div>
       </div>
 
@@ -370,10 +366,8 @@
           <p class="fs-6 mb-4 text-center fs-md-1">Explore agriculturally focused, conservation-centered or in-stream
             flow protection water restoration
             projects.</p>
-          <a href="https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html"
-            title="Intel and the Environment" class="mt-auto"><button type="button"
-              class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4">Learn More</button></a>
-
+         <button type="button" class="btn btn-primary mt-auto col-7 mx-auto col-md-8 col-lg-6 col-xl-4" data-bs-toggle="modal"
+              data-bs-target="#intelWaterModal">Learn More</button></a>
         </div>
       </div>
 
@@ -381,25 +375,97 @@
 
     <div class="row d-flex">
       <div class="col-2 img-box d-flex justify-content-end">
-        
+
       </div>
-      <h2 class="newsletter mt-5 text-center fs-3 col-10 pb-0 mb-0 offset-1" id="newsletter-cta">Sign up for Our Sustainability Newsletter <img src="img/newspaper.svg" title="newspaper icon" id="newspaper" class="bg-info col-1 me-auto mt-auto"></h2>
-      
-      
+      <h2 class="newsletter mt-5 text-center fs-3 col-10 pb-0 mb-0 offset-1" id="newsletter-cta">Sign up for Our
+        Sustainability Newsletter <img src="img/newspaper.svg" title="newspaper icon" id="newspaper"
+          class="bg-info col-1 me-auto mt-auto"></h2>
+
+
     </div>
-    
+
     <form class="col-8 col-sm-6 offset-2 offset-sm-3 col-md-4 offset-md-4  pt-0 mt-0">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-  </form>
- </div>
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    </form>
+  </div>
+
+
+
+  <div class="modal fade" id="intelWasteModal" tabindex="-1" aria-labelledby="wasteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="wasteModal">Intel's aim to reduce waste</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text fs-2">A circular economy model encourages businesses to re-envision traditional linear
+            product strategies and manage environmental impact from ‘cradle to cradle’. When original equipment
+            manufacturers and other Intel customers return components, also known as reverse logistics, Intel uses a
+            circular economy strategy to maximize recovery value and while reducing the environmental impact.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary"
+            onclick="window.location.href='https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html'">Website</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="intelPowerModal" tabindex="-1" aria-labelledby="powerModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="powerModal">Intel's aim to conserve 4 billion kWh by 2030</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text fs-2">Over the last five years, Intel's renewable electricity supply and purchases have
+            totaled 37.9 billion kWh of renewable electricity. That's enough to power more than 3.5 million US
+            households for one year. To learn more, read the white paper, “Intel’s Approach to Renewable Electricity.”
+
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary"
+            onclick="window.location.href='https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html'">Website</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="intelWaterModal" tabindex="-1" aria-labelledby="waterModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="waterModal">Achieve net positive water by 2030</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-text fs-2">As part of our commitment to achieve net positive water, we are restoring water to
+            support the communities we call home. To date, we have funded more than 40 water restoration projects,
+            collectively restoring billions of gallons of water to local watersheds each year. These projects—whether
+            agriculturally focused, conservation-centered, or targeted at in-stream flow protection—aim to address local
+            water issues and support the well-being of our communities and the environment.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary"
+            onclick="window.location.href='https://www.intel.com/content/www/us/en/environment/intel-and-the-environment.html'">Website</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="d-flex justify-content-between mt-5">
     <p class="fs-5 my-auto text-light ms-3 fst-italic" id="intel-slogan">That's the power of Intel inside</p>
     <a href="https://www.intel.com" target="_blank" title="intel website" rel="noopener" class="my-auto">
       <img src="img/intel-header-logo.svg" id="intel-foot" alt="Intel icon" class="my-auto me-3">
     </a>
-
   </footer>
   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
 </body>
