@@ -1216,4 +1216,23 @@ body.rtl-mode {
 .modal-title {
   flex: 1;
   text-align: center;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.modal-header {
+  background-color: black;
+}
+
+.modal-body .modal-text {
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.modal-next-steps {
+  font-weight: bold;
+}
+
+.modal-footer {
+  background-color: black;
 }
