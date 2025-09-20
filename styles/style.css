@@ -1208,3 +1208,12 @@ body.rtl-mode {
 .row {
   overflow-x: hidden;
 }
+
+.modal {
+  --bs-modal-bg:  rgb(13, 197, 248);
+}
+
+.modal-title {
+  flex: 1;
+  text-align: center;
+}
